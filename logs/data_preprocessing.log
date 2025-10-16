@@ -24,3 +24,10 @@
 2025-10-16 12:32:02,037 - data_preprocessing - DEBUG - Numeric columns scaled
 2025-10-16 12:32:02,054 - data_preprocessing - DEBUG - Training dataset saved successfully
 2025-10-16 12:32:02,054 - data_preprocessing - DEBUG - Testing dataset saved successfully
+2025-10-16 13:15:25,470 - data_preprocessing - DEBUG - Created directory: data/clean_data
+2025-10-16 13:15:25,489 - data_preprocessing - DEBUG - Data loaded successfully
+2025-10-16 13:15:25,489 - data_preprocessing - DEBUG - Null values removed
+2025-10-16 13:15:25,508 - data_preprocessing - DEBUG - Duplicates removed
+2025-10-16 13:15:25,508 - data_preprocessing - DEBUG - Numeric columns scaled
+2025-10-16 13:15:25,526 - data_preprocessing - DEBUG - Training dataset saved successfully
+2025-10-16 13:15:25,528 - data_preprocessing - DEBUG - Testing dataset saved successfully

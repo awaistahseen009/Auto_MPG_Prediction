@@ -4,4 +4,4 @@ data
 .env
 models
 models/
-.dvc
+.dvc/cache/
