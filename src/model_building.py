@@ -40,10 +40,9 @@ def compare_models(scores_a, scores_b, model_a="Model_A", model_b="Model_B"):
     logger.info(f"Decision: {decision}")
     return significant, test_used
 
-
 # ---------------------- Model Training Function ---------------------- #
 def train_model(cv=True):
-    train = pd.read_csv("data/train_data.csv")
+    train = pd.read_csv("data/clean_data/train_data.csv")
     X_train, y_train = train.drop("mpg", axis=1), train["mpg"]
 
     if cv:
@@ -157,7 +156,6 @@ def train_model(cv=True):
     logger.info("Starting model saving process")
     joblib.dump(best_model, "models/best_model.pkl")
     logger.info("Model saved successfully as models/best_model.pkl")
-
 
 if __name__ == "__main__":
     train_model(cv=True)

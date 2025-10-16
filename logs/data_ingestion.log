@@ -22,3 +22,8 @@
 2025-10-14 20:11:50,843 - data_ingestion - DEBUG - Download completed and saved on location data\auto_mpg.zip
 2025-10-14 20:11:50,848 - data_ingestion - DEBUG - Starting Extracting files from data\auto_mpg.zip
 2025-10-14 20:11:50,869 - data_ingestion - INFO - Extraction complete! Files extracted to data
+2025-10-16 12:31:12,836 - data_ingestion - DEBUG - Downloading auto_mpg.zip from bucket model-datasets
+2025-10-16 12:31:15,645 - data_ingestion - DEBUG - Download completed and saved at data/raw\auto_mpg.zip
+2025-10-16 12:31:15,645 - data_ingestion - DEBUG - Starting extraction from data/raw\auto_mpg.zip
+2025-10-16 12:31:15,667 - data_ingestion - DEBUG - Extraction complete. Files are in data/raw\extracted
+2025-10-16 12:31:15,668 - data_ingestion - DEBUG - Removed the original zip file data/raw\auto_mpg.zip

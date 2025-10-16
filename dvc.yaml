@@ -28,5 +28,3 @@ stages:
       - data/clean_data
       - models
       - src/model_evaluation.py
-    outs:
-      - metrics/evaluation.csv # optional: if you save evaluation metrics

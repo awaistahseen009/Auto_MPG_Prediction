@@ -64,4 +64,4 @@ def preprocess_data(path: str):
 
 
 if __name__ == "__main__":
-    preprocess_data("data/auto-mpg.data")
+    preprocess_data("data/raw/extracted/auto-mpg.data")

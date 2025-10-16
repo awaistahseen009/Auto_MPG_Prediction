@@ -11,7 +11,7 @@ logger = make_logger("model_evaluation", "DEBUG")
 def evaluate_model():
     # ---------------------- Load Test Data ---------------------- #
     logger.debug("Loading test data")
-    test = pd.read_csv("data/test_data.csv")
+    test = pd.read_csv("data/clean_data/test_data.csv")
     X_test = test.drop("mpg", axis=1)
     y_test = test["mpg"]
 

@@ -13,3 +13,14 @@
 2025-10-16 11:30:42,011 - data_preprocessing - DEBUG - Duplicates are removed
 2025-10-16 11:30:42,027 - data_preprocessing - DEBUG - Training dataset saved successfully
 2025-10-16 11:30:42,035 - data_preprocessing - DEBUG - Testing dataset saved successfully
+2025-10-16 12:31:17,099 - data_preprocessing - DEBUG - Created directory: data/clean_data
+2025-10-16 12:31:17,103 - data_preprocessing - ERROR - Failed to complete the data preprocessing process: [Errno 2] No such file or directory: 'data/auto-mpg.data'
+2025-10-16 12:31:42,067 - data_preprocessing - DEBUG - Created directory: data/clean_data
+2025-10-16 12:31:42,067 - data_preprocessing - ERROR - Failed to complete the data preprocessing process: [Errno 2] No such file or directory: 'data/raw/auto-mpg.data'
+2025-10-16 12:32:02,015 - data_preprocessing - DEBUG - Created directory: data/clean_data
+2025-10-16 12:32:02,023 - data_preprocessing - DEBUG - Data loaded successfully
+2025-10-16 12:32:02,023 - data_preprocessing - DEBUG - Null values removed
+2025-10-16 12:32:02,037 - data_preprocessing - DEBUG - Duplicates removed
+2025-10-16 12:32:02,037 - data_preprocessing - DEBUG - Numeric columns scaled
+2025-10-16 12:32:02,054 - data_preprocessing - DEBUG - Training dataset saved successfully
+2025-10-16 12:32:02,054 - data_preprocessing - DEBUG - Testing dataset saved successfully
