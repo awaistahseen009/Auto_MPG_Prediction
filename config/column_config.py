@@ -1,0 +1,4 @@
+column_names = [
+    'mpg', 'cylinders', 'displacement', 'horsepower', 'weight',
+    'acceleration', 'model_year', 'origin', 'car_name'
+]
