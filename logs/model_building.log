@@ -260,3 +260,121 @@
 2025-10-16 13:15:38,541 - model_building - INFO - Best Model Selected: RandomForestRegressor
 2025-10-16 13:15:38,541 - model_building - INFO - Starting model saving process
 2025-10-16 13:15:38,605 - model_building - INFO - Model saved successfully as models/best_model.pkl
+2025-10-16 13:35:43,165 - model_building - INFO - LinearRegression:
+2025-10-16 13:35:43,165 - model_building - INFO - Best Parameters: {}
+2025-10-16 13:35:43,165 - model_building - INFO - Cross-Validated R2 Score: 0.8099
+2025-10-16 13:35:43,165 - model_building - INFO - R2 Scores per Fold: ['0.8161', '0.8124', '0.7733', '0.7969', '0.8507']
+2025-10-16 13:35:43,181 - model_building - INFO - ------------------------------------------------------------
+2025-10-16 13:35:56,121 - model_building - INFO - Ridge:
+2025-10-16 13:35:56,121 - model_building - INFO - Best Parameters: {'alpha': 1.0}
+2025-10-16 13:35:56,121 - model_building - INFO - Cross-Validated R2 Score: 0.8103
+2025-10-16 13:35:56,121 - model_building - INFO - R2 Scores per Fold: ['0.8166', '0.8117', '0.7726', '0.7999', '0.8505']
+2025-10-16 13:35:56,121 - model_building - INFO - ------------------------------------------------------------
+2025-10-16 13:36:10,596 - model_building - INFO - Lasso:
+2025-10-16 13:36:10,596 - model_building - INFO - Best Parameters: {'alpha': 0.1, 'max_iter': 1000}
+2025-10-16 13:36:10,596 - model_building - INFO - Cross-Validated R2 Score: 0.8130
+2025-10-16 13:36:10,596 - model_building - INFO - R2 Scores per Fold: ['0.8228', '0.8080', '0.7721', '0.8123', '0.8497']
+2025-10-16 13:36:10,596 - model_building - INFO - ------------------------------------------------------------
+2025-10-16 13:36:27,649 - model_building - INFO - ElasticNet:
+2025-10-16 13:36:27,649 - model_building - INFO - Best Parameters: {'alpha': 0.1, 'l1_ratio': 0.8}
+2025-10-16 13:36:27,649 - model_building - INFO - Cross-Validated R2 Score: 0.8119
+2025-10-16 13:36:27,649 - model_building - INFO - R2 Scores per Fold: ['0.8192', '0.8107', '0.7710', '0.8149', '0.8437']
+2025-10-16 13:36:27,649 - model_building - INFO - ------------------------------------------------------------
+2025-10-16 13:36:45,887 - model_building - INFO - SVR:
+2025-10-16 13:36:45,888 - model_building - INFO - Best Parameters: {'C': 10.0, 'gamma': 'auto', 'kernel': 'rbf'}
+2025-10-16 13:36:45,889 - model_building - INFO - Cross-Validated R2 Score: 0.8506
+2025-10-16 13:36:45,890 - model_building - INFO - R2 Scores per Fold: ['0.8266', '0.8703', '0.8024', '0.8863', '0.8675']
+2025-10-16 13:36:45,891 - model_building - INFO - ------------------------------------------------------------
+2025-10-16 13:37:37,616 - model_building - INFO - RandomForestRegressor:
+2025-10-16 13:37:37,617 - model_building - INFO - Best Parameters: {'max_depth': None, 'n_estimators': 100}
+2025-10-16 13:37:37,618 - model_building - INFO - Cross-Validated R2 Score: 0.8574
+2025-10-16 13:37:37,620 - model_building - INFO - R2 Scores per Fold: ['0.8222', '0.8374', '0.8495', '0.8979', '0.8803']
+2025-10-16 13:37:37,622 - model_building - INFO - ------------------------------------------------------------
+2025-10-16 13:37:50,337 - model_building - INFO - DecisionTreeRegressor:
+2025-10-16 13:37:50,337 - model_building - INFO - Best Parameters: {'max_depth': 10, 'min_samples_split': 5}
+2025-10-16 13:37:50,337 - model_building - INFO - Cross-Validated R2 Score: 0.8029
+2025-10-16 13:37:50,337 - model_building - INFO - R2 Scores per Fold: ['0.8305', '0.7701', '0.7756', '0.8624', '0.7757']
+2025-10-16 13:37:50,337 - model_building - INFO - ------------------------------------------------------------
+2025-10-16 13:37:51,092 - model_building - INFO - Training completed
+2025-10-16 13:37:51,113 - model_building - INFO - Top 2 Models: ['RandomForestRegressor', 'SVR']
+2025-10-16 13:37:51,145 - model_building - INFO - Comparison: RandomForestRegressor vs SVR
+2025-10-16 13:37:51,146 - model_building - INFO - Normality p-value: 0.8838
+2025-10-16 13:37:51,146 - model_building - INFO - Wilcoxon Test p-value: 0.6250 - Not Significant
+2025-10-16 13:37:51,146 - model_building - INFO - Decision: Normality violated - use Wilcoxon test
+2025-10-16 13:37:51,146 - model_building - INFO - Best Model Selected: RandomForestRegressor
+2025-10-16 13:37:51,177 - model_building - INFO - Model saved successfully as models/best_model.pkl
+2025-10-16 13:38:06,383 - model_building - INFO - Model artifact logged in MLflow
+2025-10-16 13:45:08,913 - model_building - INFO - LinearRegression:
+2025-10-16 13:45:08,913 - model_building - INFO - Best Parameters: {}
+2025-10-16 13:45:08,913 - model_building - INFO - Cross-Validated R2 Score: 0.8099
+2025-10-16 13:45:08,913 - model_building - INFO - ------------------------------------------------------------
+2025-10-16 13:45:21,469 - model_building - INFO - Ridge:
+2025-10-16 13:45:21,469 - model_building - INFO - Best Parameters: {'alpha': 1.0}
+2025-10-16 13:45:21,469 - model_building - INFO - Cross-Validated R2 Score: 0.8103
+2025-10-16 13:45:21,469 - model_building - INFO - ------------------------------------------------------------
+2025-10-16 13:45:33,487 - model_building - INFO - Lasso:
+2025-10-16 13:45:33,488 - model_building - INFO - Best Parameters: {'alpha': 0.1, 'max_iter': 1000}
+2025-10-16 13:45:33,489 - model_building - INFO - Cross-Validated R2 Score: 0.8130
+2025-10-16 13:45:33,490 - model_building - INFO - ------------------------------------------------------------
+2025-10-16 13:45:42,081 - model_building - INFO - ElasticNet:
+2025-10-16 13:45:42,082 - model_building - INFO - Best Parameters: {'alpha': 0.1, 'l1_ratio': 0.8}
+2025-10-16 13:45:42,083 - model_building - INFO - Cross-Validated R2 Score: 0.8119
+2025-10-16 13:45:42,084 - model_building - INFO - ------------------------------------------------------------
+2025-10-16 13:45:51,643 - model_building - INFO - SVR:
+2025-10-16 13:45:51,644 - model_building - INFO - Best Parameters: {'C': 10.0, 'gamma': 'auto', 'kernel': 'rbf'}
+2025-10-16 13:45:51,645 - model_building - INFO - Cross-Validated R2 Score: 0.8506
+2025-10-16 13:45:51,646 - model_building - INFO - ------------------------------------------------------------
+2025-10-16 13:46:16,270 - model_building - INFO - RandomForestRegressor:
+2025-10-16 13:46:16,271 - model_building - INFO - Best Parameters: {'max_depth': 20, 'n_estimators': 100}
+2025-10-16 13:46:16,271 - model_building - INFO - Cross-Validated R2 Score: 0.8588
+2025-10-16 13:46:16,271 - model_building - INFO - ------------------------------------------------------------
+2025-10-16 13:46:25,882 - model_building - INFO - DecisionTreeRegressor:
+2025-10-16 13:46:25,883 - model_building - INFO - Best Parameters: {'max_depth': None, 'min_samples_split': 5}
+2025-10-16 13:46:25,884 - model_building - INFO - Cross-Validated R2 Score: 0.8080
+2025-10-16 13:46:25,885 - model_building - INFO - ------------------------------------------------------------
+2025-10-16 13:46:26,600 - model_building - INFO - Training completed
+2025-10-16 13:46:26,617 - model_building - INFO - Top 2 Models: ['RandomForestRegressor', 'SVR']
+2025-10-16 13:46:26,674 - model_building - INFO - Comparison: RandomForestRegressor vs SVR
+2025-10-16 13:46:26,675 - model_building - INFO - Normality p-value: 1.0000
+2025-10-16 13:46:26,676 - model_building - INFO - Wilcoxon Test p-value: 0.0625 - Not Significant
+2025-10-16 13:46:26,676 - model_building - INFO - Decision: Normality violated - use Wilcoxon test
+2025-10-16 13:46:26,677 - model_building - INFO - Best Model Selected: RandomForestRegressor
+2025-10-16 13:46:26,707 - model_building - INFO - Model saved successfully as models/best_model.pkl
+2025-10-16 13:46:39,677 - model_building - INFO - Model artifact logged in MLflow
+2025-10-16 13:47:14,090 - model_building - INFO - LinearRegression:
+2025-10-16 13:47:14,090 - model_building - INFO - Best Parameters: {}
+2025-10-16 13:47:14,099 - model_building - INFO - Cross-Validated R2 Score: 0.8099
+2025-10-16 13:47:14,099 - model_building - INFO - ------------------------------------------------------------
+2025-10-16 13:47:16,146 - model_building - INFO - Ridge:
+2025-10-16 13:47:16,148 - model_building - INFO - Best Parameters: {'alpha': 1.0}
+2025-10-16 13:47:16,151 - model_building - INFO - Cross-Validated R2 Score: 0.8103
+2025-10-16 13:47:16,152 - model_building - INFO - ------------------------------------------------------------
+2025-10-16 13:47:16,307 - model_building - INFO - Lasso:
+2025-10-16 13:47:16,308 - model_building - INFO - Best Parameters: {'alpha': 0.1, 'max_iter': 1000}
+2025-10-16 13:47:16,308 - model_building - INFO - Cross-Validated R2 Score: 0.8130
+2025-10-16 13:47:16,309 - model_building - INFO - ------------------------------------------------------------
+2025-10-16 13:47:16,410 - model_building - INFO - ElasticNet:
+2025-10-16 13:47:16,411 - model_building - INFO - Best Parameters: {'alpha': 0.1, 'l1_ratio': 0.8}
+2025-10-16 13:47:16,411 - model_building - INFO - Cross-Validated R2 Score: 0.8119
+2025-10-16 13:47:16,412 - model_building - INFO - ------------------------------------------------------------
+2025-10-16 13:47:16,630 - model_building - INFO - SVR:
+2025-10-16 13:47:16,631 - model_building - INFO - Best Parameters: {'C': 10.0, 'gamma': 'auto', 'kernel': 'rbf'}
+2025-10-16 13:47:16,631 - model_building - INFO - Cross-Validated R2 Score: 0.8506
+2025-10-16 13:47:16,632 - model_building - INFO - ------------------------------------------------------------
+2025-10-16 13:47:20,294 - model_building - INFO - RandomForestRegressor:
+2025-10-16 13:47:20,294 - model_building - INFO - Best Parameters: {'max_depth': 10, 'n_estimators': 100}
+2025-10-16 13:47:20,294 - model_building - INFO - Cross-Validated R2 Score: 0.8594
+2025-10-16 13:47:20,294 - model_building - INFO - ------------------------------------------------------------
+2025-10-16 13:47:20,399 - model_building - INFO - DecisionTreeRegressor:
+2025-10-16 13:47:20,399 - model_building - INFO - Best Parameters: {'max_depth': 10, 'min_samples_split': 5}
+2025-10-16 13:47:20,399 - model_building - INFO - Cross-Validated R2 Score: 0.7983
+2025-10-16 13:47:20,409 - model_building - INFO - ------------------------------------------------------------
+2025-10-16 13:47:21,150 - model_building - INFO - Training completed
+2025-10-16 13:47:21,153 - model_building - INFO - Top 2 Models: ['RandomForestRegressor', 'SVR']
+2025-10-16 13:47:21,198 - model_building - INFO - Comparison: RandomForestRegressor vs SVR
+2025-10-16 13:47:21,200 - model_building - INFO - Normality p-value: 1.0000
+2025-10-16 13:47:21,200 - model_building - INFO - Wilcoxon Test p-value: 0.0625 - Not Significant
+2025-10-16 13:47:21,201 - model_building - INFO - Decision: Normality violated - use Wilcoxon test
+2025-10-16 13:47:21,202 - model_building - INFO - Best Model Selected: RandomForestRegressor
+2025-10-16 13:47:21,248 - model_building - INFO - Model saved successfully as models/best_model.pkl
+2025-10-16 13:47:55,807 - model_building - INFO - Model artifact logged in MLflow

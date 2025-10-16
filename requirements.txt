@@ -6,3 +6,4 @@ scikit-learn
 awscli
 pingouin
 mlflow<3
+dagshub

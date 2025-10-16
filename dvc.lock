@@ -41,8 +41,8 @@ stages:
       nfiles: 2
     - path: src/model_building.py
       hash: md5
-      md5: c93744bd0081cfb8c5cd56e033e96b15
-      size: 6796
+      md5: 0e39a558eacc496d580dcc0b5fb0b577
+      size: 5635
   model_evaluation:
     cmd: python src/model_evaluation.py
     deps:
