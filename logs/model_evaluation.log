@@ -1,0 +1,12 @@
+2025-10-16 12:16:52,959 - model_evaluation - DEBUG - Loading test data
+2025-10-16 12:16:52,983 - model_evaluation - DEBUG - Loading trained model
+2025-10-16 12:16:53,090 - model_evaluation - INFO - Model loaded successfully
+2025-10-16 12:16:53,090 - model_evaluation - DEBUG - Evaluating model on test data
+2025-10-16 12:16:53,090 - model_evaluation - INFO - R2 Score on Test Data: 0.8852
+2025-10-16 12:16:53,106 - model_evaluation - DEBUG - Sample of predictions:
+   Actual  Predicted
+0    26.0     25.980
+1    21.6     22.562
+2    36.1     35.002
+3    26.0     29.950
+4    27.0     26.346

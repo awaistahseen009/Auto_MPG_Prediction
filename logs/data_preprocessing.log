@@ -1,0 +1,15 @@
+2025-10-16 11:15:57,945 - data_preprocessing - ERROR - Failed to complete the data prprocessing process: [Errno 2] No such file or directory: '../data/auto_mpg.data'
+2025-10-16 11:16:20,101 - data_preprocessing - ERROR - Failed to complete the data prprocessing process: [Errno 2] No such file or directory: '../data/auto-mpg.data'
+2025-10-16 11:16:33,767 - data_preprocessing - DEBUG - Data Loaded Successfully
+2025-10-16 11:16:33,775 - data_preprocessing - DEBUG - Null Values are removed
+2025-10-16 11:16:33,775 - data_preprocessing - DEBUG - Duplicates are removed
+2025-10-16 11:17:26,522 - data_preprocessing - DEBUG - Data Loaded Successfully
+2025-10-16 11:17:26,534 - data_preprocessing - DEBUG - Null Values are removed
+2025-10-16 11:17:26,538 - data_preprocessing - DEBUG - Duplicates are removed
+2025-10-16 11:17:26,551 - data_preprocessing - DEBUG - Training dataset saved successfully
+2025-10-16 11:17:26,551 - data_preprocessing - DEBUG - Testing dataset saved successfully
+2025-10-16 11:30:42,011 - data_preprocessing - DEBUG - Data Loaded Successfully
+2025-10-16 11:30:42,011 - data_preprocessing - DEBUG - Null Values are removed
+2025-10-16 11:30:42,011 - data_preprocessing - DEBUG - Duplicates are removed
+2025-10-16 11:30:42,027 - data_preprocessing - DEBUG - Training dataset saved successfully
+2025-10-16 11:30:42,035 - data_preprocessing - DEBUG - Testing dataset saved successfully

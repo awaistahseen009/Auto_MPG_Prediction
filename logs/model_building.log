@@ -1,0 +1,172 @@
+2025-10-16 11:59:27,715 - model_building - DEBUG - Training with Cross Fold Validation
+2025-10-16 11:59:29,528 - model_building - INFO - LinearRegression:
+2025-10-16 11:59:29,528 - model_building - INFO - Best Parameters: {}
+2025-10-16 11:59:29,528 - model_building - INFO - Cross-Validated R² Score: 0.8099
+2025-10-16 11:59:29,544 - model_building - INFO - R² Scores per Fold: ['0.8161', '0.8124', '0.7733', '0.7969', '0.8507']
+2025-10-16 11:59:29,544 - model_building - INFO - ------------------------------------------------------------
+2025-10-16 11:59:30,698 - model_building - INFO - Ridge:
+2025-10-16 11:59:30,710 - model_building - INFO - Best Parameters: {'alpha': 1.0}
+2025-10-16 11:59:30,710 - model_building - INFO - Cross-Validated R² Score: 0.8103
+2025-10-16 11:59:30,710 - model_building - INFO - R² Scores per Fold: ['0.8166', '0.8117', '0.7726', '0.7999', '0.8505']
+2025-10-16 11:59:30,710 - model_building - INFO - ------------------------------------------------------------
+2025-10-16 11:59:30,766 - model_building - INFO - Lasso:
+2025-10-16 11:59:30,766 - model_building - INFO - Best Parameters: {'alpha': 0.1, 'max_iter': 1000}
+2025-10-16 11:59:30,766 - model_building - INFO - Cross-Validated R² Score: 0.8130
+2025-10-16 11:59:30,766 - model_building - INFO - R² Scores per Fold: ['0.8228', '0.8080', '0.7721', '0.8123', '0.8497']
+2025-10-16 11:59:30,766 - model_building - INFO - ------------------------------------------------------------
+2025-10-16 11:59:30,843 - model_building - INFO - ElasticNet:
+2025-10-16 11:59:30,844 - model_building - INFO - Best Parameters: {'alpha': 0.1, 'l1_ratio': 0.8}
+2025-10-16 11:59:30,844 - model_building - INFO - Cross-Validated R² Score: 0.8119
+2025-10-16 11:59:30,844 - model_building - INFO - R² Scores per Fold: ['0.8192', '0.8107', '0.7710', '0.8149', '0.8437']
+2025-10-16 11:59:30,845 - model_building - INFO - ------------------------------------------------------------
+2025-10-16 11:59:31,012 - model_building - INFO - SVR:
+2025-10-16 11:59:31,012 - model_building - INFO - Best Parameters: {'C': 10.0, 'gamma': 'auto', 'kernel': 'rbf'}
+2025-10-16 11:59:31,012 - model_building - INFO - Cross-Validated R² Score: 0.8506
+2025-10-16 11:59:31,012 - model_building - INFO - R² Scores per Fold: ['0.8266', '0.8703', '0.8024', '0.8863', '0.8675']
+2025-10-16 11:59:31,012 - model_building - INFO - ------------------------------------------------------------
+2025-10-16 11:59:36,209 - model_building - INFO - RandomForestRegressor:
+2025-10-16 11:59:36,209 - model_building - INFO - Best Parameters: {'max_depth': 30, 'n_estimators': 100}
+2025-10-16 11:59:36,209 - model_building - INFO - Cross-Validated R² Score: 0.8606
+2025-10-16 11:59:36,209 - model_building - INFO - R² Scores per Fold: ['0.8214', '0.8446', '0.8466', '0.8991', '0.8912']
+2025-10-16 11:59:36,209 - model_building - INFO - ------------------------------------------------------------
+2025-10-16 11:59:36,316 - model_building - INFO - DecisionTreeRegressor:
+2025-10-16 11:59:36,319 - model_building - INFO - Best Parameters: {'max_depth': None, 'min_samples_leaf': 1, 'min_samples_split': 5}
+2025-10-16 11:59:36,319 - model_building - INFO - Cross-Validated R² Score: 0.8037
+2025-10-16 11:59:36,319 - model_building - INFO - R² Scores per Fold: ['0.8165', '0.7712', '0.7840', '0.8774', '0.7692']
+2025-10-16 11:59:36,319 - model_building - INFO - ------------------------------------------------------------
+2025-10-16 11:59:36,319 - model_building - INFO - Training completed.
+2025-10-16 11:59:36,319 - model_building - INFO - Top 2 Models: ['RandomForestRegressor', 'SVR']
+2025-10-16 11:59:36,348 - model_building - INFO - Normality p-value: 0.9932
+2025-10-16 12:05:02,978 - model_building - DEBUG - Training with Cross Fold Validation
+2025-10-16 12:05:04,743 - model_building - INFO - LinearRegression:
+2025-10-16 12:05:04,747 - model_building - INFO - Best Parameters: {}
+2025-10-16 12:05:04,747 - model_building - INFO - Cross-Validated R² Score: 0.8099
+2025-10-16 12:05:04,747 - model_building - INFO - R² Scores per Fold: ['0.8161', '0.8124', '0.7733', '0.7969', '0.8507']
+2025-10-16 12:05:04,747 - model_building - INFO - ------------------------------------------------------------
+2025-10-16 12:05:05,872 - model_building - INFO - Ridge:
+2025-10-16 12:05:05,872 - model_building - INFO - Best Parameters: {'alpha': 1.0}
+2025-10-16 12:05:05,872 - model_building - INFO - Cross-Validated R² Score: 0.8103
+2025-10-16 12:05:05,872 - model_building - INFO - R² Scores per Fold: ['0.8166', '0.8117', '0.7726', '0.7999', '0.8505']
+2025-10-16 12:05:05,872 - model_building - INFO - ------------------------------------------------------------
+2025-10-16 12:05:05,952 - model_building - INFO - Lasso:
+2025-10-16 12:05:05,952 - model_building - INFO - Best Parameters: {'alpha': 0.1, 'max_iter': 1000}
+2025-10-16 12:05:05,952 - model_building - INFO - Cross-Validated R² Score: 0.8130
+2025-10-16 12:05:05,952 - model_building - INFO - R² Scores per Fold: ['0.8228', '0.8080', '0.7721', '0.8123', '0.8497']
+2025-10-16 12:05:05,952 - model_building - INFO - ------------------------------------------------------------
+2025-10-16 12:05:06,022 - model_building - INFO - ElasticNet:
+2025-10-16 12:05:06,022 - model_building - INFO - Best Parameters: {'alpha': 0.1, 'l1_ratio': 0.8}
+2025-10-16 12:05:06,022 - model_building - INFO - Cross-Validated R² Score: 0.8119
+2025-10-16 12:05:06,022 - model_building - INFO - R² Scores per Fold: ['0.8192', '0.8107', '0.7710', '0.8149', '0.8437']
+2025-10-16 12:05:06,022 - model_building - INFO - ------------------------------------------------------------
+2025-10-16 12:05:06,173 - model_building - INFO - SVR:
+2025-10-16 12:05:06,173 - model_building - INFO - Best Parameters: {'C': 10.0, 'gamma': 'auto', 'kernel': 'rbf'}
+2025-10-16 12:05:06,173 - model_building - INFO - Cross-Validated R² Score: 0.8506
+2025-10-16 12:05:06,173 - model_building - INFO - R² Scores per Fold: ['0.8266', '0.8703', '0.8024', '0.8863', '0.8675']
+2025-10-16 12:05:06,173 - model_building - INFO - ------------------------------------------------------------
+2025-10-16 12:05:11,405 - model_building - INFO - RandomForestRegressor:
+2025-10-16 12:05:11,405 - model_building - INFO - Best Parameters: {'max_depth': 30, 'n_estimators': 200}
+2025-10-16 12:05:11,405 - model_building - INFO - Cross-Validated R² Score: 0.8587
+2025-10-16 12:05:11,405 - model_building - INFO - R² Scores per Fold: ['0.8110', '0.8496', '0.8531', '0.8977', '0.8822']
+2025-10-16 12:05:11,405 - model_building - INFO - ------------------------------------------------------------
+2025-10-16 12:05:11,520 - model_building - INFO - DecisionTreeRegressor:
+2025-10-16 12:05:11,520 - model_building - INFO - Best Parameters: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 2}
+2025-10-16 12:05:11,520 - model_building - INFO - Cross-Validated R² Score: 0.7981
+2025-10-16 12:05:11,520 - model_building - INFO - R² Scores per Fold: ['0.7906', '0.7904', '0.7236', '0.8556', '0.8304']
+2025-10-16 12:05:11,520 - model_building - INFO - ------------------------------------------------------------
+2025-10-16 12:05:11,520 - model_building - INFO - Training completed.
+2025-10-16 12:05:11,520 - model_building - INFO - Top 2 Models: ['RandomForestRegressor', 'SVR']
+2025-10-16 12:05:11,529 - model_building - INFO - Comparison: RandomForestRegressor vs SVR
+2025-10-16 12:05:11,529 - model_building - INFO - Normality p-value: 0.5325
+2025-10-16 12:05:11,552 - model_building - INFO - Best Model Selected: RandomForestRegressor
+2025-10-16 12:05:11,552 - model_building - INFO - Starting model saving process...
+2025-10-16 12:05:11,609 - model_building - INFO - Model saved successfully as models/best_model.pkl
+2025-10-16 12:07:37,593 - model_building - DEBUG - Training with cross fold validation
+2025-10-16 12:07:39,330 - model_building - INFO - LinearRegression:
+2025-10-16 12:07:39,330 - model_building - INFO - Best Parameters: {}
+2025-10-16 12:07:39,330 - model_building - INFO - Cross-Validated R2 Score: 0.8099
+2025-10-16 12:07:39,330 - model_building - INFO - R2 Scores per Fold: ['0.8161', '0.8124', '0.7733', '0.7969', '0.8507']
+2025-10-16 12:07:39,330 - model_building - INFO - ------------------------------------------------------------
+2025-10-16 12:07:40,504 - model_building - INFO - Ridge:
+2025-10-16 12:07:40,504 - model_building - INFO - Best Parameters: {'alpha': 1.0}
+2025-10-16 12:07:40,504 - model_building - INFO - Cross-Validated R2 Score: 0.8103
+2025-10-16 12:07:40,504 - model_building - INFO - R2 Scores per Fold: ['0.8166', '0.8117', '0.7726', '0.7999', '0.8505']
+2025-10-16 12:07:40,504 - model_building - INFO - ------------------------------------------------------------
+2025-10-16 12:07:40,577 - model_building - INFO - Lasso:
+2025-10-16 12:07:40,577 - model_building - INFO - Best Parameters: {'alpha': 0.1, 'max_iter': 1000}
+2025-10-16 12:07:40,577 - model_building - INFO - Cross-Validated R2 Score: 0.8130
+2025-10-16 12:07:40,577 - model_building - INFO - R2 Scores per Fold: ['0.8228', '0.8080', '0.7721', '0.8123', '0.8497']
+2025-10-16 12:07:40,577 - model_building - INFO - ------------------------------------------------------------
+2025-10-16 12:07:40,651 - model_building - INFO - ElasticNet:
+2025-10-16 12:07:40,651 - model_building - INFO - Best Parameters: {'alpha': 0.1, 'l1_ratio': 0.8}
+2025-10-16 12:07:40,651 - model_building - INFO - Cross-Validated R2 Score: 0.8119
+2025-10-16 12:07:40,651 - model_building - INFO - R2 Scores per Fold: ['0.8192', '0.8107', '0.7710', '0.8149', '0.8437']
+2025-10-16 12:07:40,651 - model_building - INFO - ------------------------------------------------------------
+2025-10-16 12:07:40,827 - model_building - INFO - SVR:
+2025-10-16 12:07:40,827 - model_building - INFO - Best Parameters: {'C': 10.0, 'gamma': 'auto', 'kernel': 'rbf'}
+2025-10-16 12:07:40,827 - model_building - INFO - Cross-Validated R2 Score: 0.8506
+2025-10-16 12:07:40,827 - model_building - INFO - R2 Scores per Fold: ['0.8266', '0.8703', '0.8024', '0.8863', '0.8675']
+2025-10-16 12:07:40,837 - model_building - INFO - ------------------------------------------------------------
+2025-10-16 12:07:46,200 - model_building - INFO - RandomForestRegressor:
+2025-10-16 12:07:46,200 - model_building - INFO - Best Parameters: {'max_depth': 40, 'n_estimators': 300}
+2025-10-16 12:07:46,200 - model_building - INFO - Cross-Validated R2 Score: 0.8600
+2025-10-16 12:07:46,200 - model_building - INFO - R2 Scores per Fold: ['0.8229', '0.8448', '0.8489', '0.8967', '0.8867']
+2025-10-16 12:07:46,200 - model_building - INFO - ------------------------------------------------------------
+2025-10-16 12:07:46,307 - model_building - INFO - DecisionTreeRegressor:
+2025-10-16 12:07:46,307 - model_building - INFO - Best Parameters: {'max_depth': None, 'min_samples_leaf': 2, 'min_samples_split': 5}
+2025-10-16 12:07:46,307 - model_building - INFO - Cross-Validated R2 Score: 0.7968
+2025-10-16 12:07:46,307 - model_building - INFO - R2 Scores per Fold: ['0.7810', '0.7988', '0.7283', '0.8414', '0.8345']
+2025-10-16 12:07:46,307 - model_building - INFO - ------------------------------------------------------------
+2025-10-16 12:07:46,307 - model_building - INFO - Training completed
+2025-10-16 12:07:46,307 - model_building - INFO - Top 2 Models: ['RandomForestRegressor', 'SVR']
+2025-10-16 12:07:46,318 - model_building - INFO - Comparison: RandomForestRegressor vs SVR
+2025-10-16 12:07:46,318 - model_building - INFO - Normality p-value: 0.9944
+2025-10-16 12:07:46,318 - model_building - INFO - Wilcoxon Test p-value: 0.6250 - Not Significant
+2025-10-16 12:07:46,318 - model_building - INFO - Decision: Normality violated - use Wilcoxon test
+2025-10-16 12:07:46,318 - model_building - INFO - Best Model Selected: RandomForestRegressor
+2025-10-16 12:07:46,318 - model_building - INFO - Starting model saving process
+2025-10-16 12:07:46,391 - model_building - INFO - Model saved successfully as models/best_model.pkl
+2025-10-16 12:13:34,149 - model_building - DEBUG - Training with cross fold validation
+2025-10-16 12:13:35,859 - model_building - INFO - LinearRegression:
+2025-10-16 12:13:35,859 - model_building - INFO - Best Parameters: {}
+2025-10-16 12:13:35,859 - model_building - INFO - Cross-Validated R2 Score: 0.8099
+2025-10-16 12:13:35,859 - model_building - INFO - R2 Scores per Fold: ['0.8161', '0.8124', '0.7733', '0.7969', '0.8507']
+2025-10-16 12:13:35,859 - model_building - INFO - ------------------------------------------------------------
+2025-10-16 12:13:37,000 - model_building - INFO - Ridge:
+2025-10-16 12:13:37,000 - model_building - INFO - Best Parameters: {'alpha': 1.0}
+2025-10-16 12:13:37,000 - model_building - INFO - Cross-Validated R2 Score: 0.8103
+2025-10-16 12:13:37,000 - model_building - INFO - R2 Scores per Fold: ['0.8166', '0.8117', '0.7726', '0.7999', '0.8505']
+2025-10-16 12:13:37,000 - model_building - INFO - ------------------------------------------------------------
+2025-10-16 12:13:37,062 - model_building - INFO - Lasso:
+2025-10-16 12:13:37,062 - model_building - INFO - Best Parameters: {'alpha': 0.1, 'max_iter': 1000}
+2025-10-16 12:13:37,062 - model_building - INFO - Cross-Validated R2 Score: 0.8130
+2025-10-16 12:13:37,062 - model_building - INFO - R2 Scores per Fold: ['0.8228', '0.8080', '0.7721', '0.8123', '0.8497']
+2025-10-16 12:13:37,062 - model_building - INFO - ------------------------------------------------------------
+2025-10-16 12:13:37,133 - model_building - INFO - ElasticNet:
+2025-10-16 12:13:37,133 - model_building - INFO - Best Parameters: {'alpha': 0.1, 'l1_ratio': 0.8}
+2025-10-16 12:13:37,141 - model_building - INFO - Cross-Validated R2 Score: 0.8119
+2025-10-16 12:13:37,149 - model_building - INFO - R2 Scores per Fold: ['0.8192', '0.8107', '0.7710', '0.8149', '0.8437']
+2025-10-16 12:13:37,151 - model_building - INFO - ------------------------------------------------------------
+2025-10-16 12:13:37,332 - model_building - INFO - SVR:
+2025-10-16 12:13:37,332 - model_building - INFO - Best Parameters: {'C': 10.0, 'gamma': 'auto', 'kernel': 'rbf'}
+2025-10-16 12:13:37,332 - model_building - INFO - Cross-Validated R2 Score: 0.8506
+2025-10-16 12:13:37,332 - model_building - INFO - R2 Scores per Fold: ['0.8266', '0.8703', '0.8024', '0.8863', '0.8675']
+2025-10-16 12:13:37,332 - model_building - INFO - ------------------------------------------------------------
+2025-10-16 12:13:42,519 - model_building - INFO - RandomForestRegressor:
+2025-10-16 12:13:42,519 - model_building - INFO - Best Parameters: {'max_depth': 20, 'n_estimators': 50}
+2025-10-16 12:13:42,526 - model_building - INFO - Cross-Validated R2 Score: 0.8585
+2025-10-16 12:13:42,526 - model_building - INFO - R2 Scores per Fold: ['0.8194', '0.8475', '0.8445', '0.9014', '0.8797']
+2025-10-16 12:13:42,526 - model_building - INFO - ------------------------------------------------------------
+2025-10-16 12:13:42,634 - model_building - INFO - DecisionTreeRegressor:
+2025-10-16 12:13:42,634 - model_building - INFO - Best Parameters: {'max_depth': 10, 'min_samples_leaf': 1, 'min_samples_split': 5}
+2025-10-16 12:13:42,634 - model_building - INFO - Cross-Validated R2 Score: 0.7964
+2025-10-16 12:13:42,634 - model_building - INFO - R2 Scores per Fold: ['0.8312', '0.7701', '0.7712', '0.8323', '0.7773']
+2025-10-16 12:13:42,634 - model_building - INFO - ------------------------------------------------------------
+2025-10-16 12:13:42,634 - model_building - INFO - Training completed
+2025-10-16 12:13:42,634 - model_building - INFO - Top 2 Models: ['RandomForestRegressor', 'SVR']
+2025-10-16 12:13:42,642 - model_building - INFO - Comparison: RandomForestRegressor vs SVR
+2025-10-16 12:13:42,642 - model_building - INFO - Normality p-value: 0.9142
+2025-10-16 12:13:42,642 - model_building - INFO - Wilcoxon Test p-value: 0.6250 - Not Significant
+2025-10-16 12:13:42,642 - model_building - INFO - Decision: Normality violated - use Wilcoxon test
+2025-10-16 12:13:42,642 - model_building - INFO - Best Model Selected: RandomForestRegressor
+2025-10-16 12:13:42,642 - model_building - INFO - Starting model saving process
+2025-10-16 12:13:42,659 - model_building - INFO - Model saved successfully as models/best_model.pkl
