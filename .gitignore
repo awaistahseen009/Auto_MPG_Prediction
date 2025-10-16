@@ -3,3 +3,5 @@ venv
 data
 .env
 logs
+models
+models/
