@@ -38,7 +38,7 @@ jobs:
           name: Configure DO Bucket
           command: |
             . venv/bin/activate
-            dvc remote add -d myremote $DO_BUCKET_NAME
+            dvc remote add -d -f myremote $DO_BUCKET_NAME
             dvc remote modify myremote access_key_id $DO_ACCESS_KEY_ID
             dvc remote modify myremote secret_access_key $DO_SECRET_ACCESS_KEY
             dvc remote modify myremote endpointurl $DO_ENDPOINT
