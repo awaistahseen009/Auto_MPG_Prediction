@@ -1,0 +1,71 @@
+version: 2.1
+
+executors:
+  docker-executor:
+    docker:
+      - image: amazon/aws-cli:2.14.6
+    working_directory: ~/repo
+    environment:
+      DVC_REMOTE: $DO_BUCKET_NAME
+      AWS_ACCESS_KEY_ID: $DO_ACCESS_KEY_ID
+      AWS_SECRET_ACCESS_KEY: $DO_SECRET_ACCESS_KEY
+      AWS_DEFAULT_REGION: $DO_REGION
+
+jobs:
+  test:
+    executor: docker-executor
+    steps:
+      - checkout
+      - run:
+          name: "Installing Python Dependencies"
+          command: |
+            apt-get update
+            apt-get install -y python3 python3-venv python3-pip unzip zip git
+      - run:
+          name: Configure AWS CLI
+          command: |
+            aws configure set aws_access_key_id $DO_ACCESS_KEY_ID
+            aws configure set aws_secret_access_key $DO_SECRET_ACCESS_KEY
+            aws configure set default.region $DO_REGION
+      - run:
+          name: Configure DO Bucket
+          command: |
+            dvc remote add -d myremote $DO_BUCKET_NAME
+            dvc remote modify myremote access_key_id $DO_ACCESS_KEY_ID
+            dvc remote modify myremote secret_access_key $DO_SECRET_ACCESS_KEY
+            dvc remote modify myremote endpointurl $DO_ENDPOINT
+            dvc remote modify myremote region $DO_REGION
+      - run:
+          name: Setup Python venv
+          command: |
+            python3 -m venv venv
+            . venv/bin/activate
+            pip install --upgrade pip
+            pip install -r requirements.txt
+            pip install dvc[s3] pytest pytest-order joblib scikit-learn pandas
+      - run:
+          name: Pull DVC data
+          command: |
+            . venv/bin/activate
+            dvc pull
+      - run:
+          name: Dataset tests
+          command: |
+            . venv/bin/activate
+            pytest tests/test_dataset.py -v
+      - run:
+          name: Run DVC pipeline
+          command: |
+            . venv/bin/activate
+            dvc repro
+      - run:
+          name: Model tests
+          command: |
+            . venv/bin/activate
+            pytest tests/test_model.py -v
+
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - test

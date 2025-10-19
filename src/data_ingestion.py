@@ -24,7 +24,7 @@ EXTRACT_DIR = os.path.join(RAW_DATA_DIR, "extracted")
 
 logger = make_logger("data_ingestion", "DEBUG")
 
-def download_file() -> None:
+def download_file(pathname=None) -> None:
     boto_client = boto3.client(
         's3',
         aws_access_key_id=ACCESS_KEY_ID,
@@ -35,20 +35,25 @@ def download_file() -> None:
     )
     try:
         logger.debug("Downloading %s from bucket %s", FILE_KEY, BUCKET_NAME)
-        boto_client.download_file(BUCKET_NAME, FILE_KEY, LOCAL_FILE_PATH)
+        if pathname:
+            local_path = os.path.join(pathname, FILE_KEY)
+            boto_client.download_file(BUCKET_NAME, FILE_KEY, local_path)
+        else:
+            boto_client.download_file(BUCKET_NAME, FILE_KEY, LOCAL_FILE_PATH)
         logger.debug("Download completed and saved at %s", LOCAL_FILE_PATH)
     except Exception as e:
         logger.error("Error during download: %s", e)
         raise
 
-def extract_file(filepath: str) -> None:
+def extract_file(filepath: str, extracted_path = None) -> None:
     try:
         logger.debug("Starting extraction from %s", filepath)
+        EXTRACT_DIR = extracted_path 
         os.makedirs(EXTRACT_DIR, exist_ok=True)
         with zipfile.ZipFile(filepath, "r") as zip_file:
             zip_file.extractall(path=EXTRACT_DIR)
         logger.debug("Extraction complete. Files are in %s", EXTRACT_DIR)
-        os.remove(filepath)
+        # os.remove(filepath)
         logger.debug("Removed the original zip file %s", filepath)
     except zipfile.BadZipFile:
         logger.error("%s is not a valid ZIP file.", filepath)

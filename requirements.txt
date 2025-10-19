@@ -7,3 +7,7 @@ awscli
 pingouin
 mlflow<3
 dagshub
+dvc[s3]
+dvc
+joblib
+pytest

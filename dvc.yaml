@@ -19,7 +19,6 @@ stages:
     deps:
       - data/clean_data
       - src/model_building.py
-
   model_evaluation:
     cmd: python src/model_evaluation.py
     deps:
