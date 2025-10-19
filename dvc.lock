@@ -5,22 +5,22 @@ stages:
     deps:
     - path: src/data_ingestion.py
       hash: md5
-      md5: 2d06ed9c350fb11c12de8583e7590937
-      size: 2325
+      md5: 490cfc8d0fb45b1ce25b8f959af5dd3b
+      size: 2451
     outs:
     - path: data/raw
       hash: md5
-      md5: 46a18c3514b78097cb4d32b1280b5808.dir
-      size: 64256
-      nfiles: 4
+      md5: a25e90225ab4977e301d5d552e6b184d.dir
+      size: 79129
+      nfiles: 5
   data_preprocessing:
     cmd: python src/data_preprocessing.py
     deps:
     - path: data/raw
       hash: md5
-      md5: 46a18c3514b78097cb4d32b1280b5808.dir
-      size: 64256
-      nfiles: 4
+      md5: a25e90225ab4977e301d5d552e6b184d.dir
+      size: 79129
+      nfiles: 5
     - path: src/data_preprocessing.py
       hash: md5
       md5: f29c95a45b37d98231868c718599dbda

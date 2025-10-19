@@ -141,3 +141,12 @@
 2025-10-19 12:27:03,982 - data_ingestion - DEBUG - Starting extraction from C:\Users\Awais\AppData\Local\Temp\pytest-of-Awais\pytest-18\data0\raw\auto_mpg.zip
 2025-10-19 12:27:03,982 - data_ingestion - DEBUG - Extraction complete. Files are in C:\Users\Awais\AppData\Local\Temp\pytest-of-Awais\pytest-18\test_features_dataset0\extracted
 2025-10-19 12:27:03,982 - data_ingestion - DEBUG - Removed the original zip file C:\Users\Awais\AppData\Local\Temp\pytest-of-Awais\pytest-18\data0\raw\auto_mpg.zip
+2025-10-19 18:36:27,660 - data_ingestion - DEBUG - Downloading auto_mpg.zip from bucket model-datasets
+2025-10-19 18:36:36,959 - data_ingestion - DEBUG - Download completed and saved at data/raw\auto_mpg.zip
+2025-10-19 18:36:36,959 - data_ingestion - DEBUG - Starting extraction from data/raw\auto_mpg.zip
+2025-10-19 18:36:36,959 - data_ingestion - ERROR - Error during extraction: expected str, bytes or os.PathLike object, not NoneType
+2025-10-19 18:37:40,704 - data_ingestion - DEBUG - Downloading auto_mpg.zip from bucket model-datasets
+2025-10-19 18:37:42,309 - data_ingestion - DEBUG - Download completed and saved at data/raw\auto_mpg.zip
+2025-10-19 18:37:42,309 - data_ingestion - DEBUG - Starting extraction from data/raw\auto_mpg.zip
+2025-10-19 18:37:42,321 - data_ingestion - DEBUG - Extraction complete. Files are in data/raw\extracted
+2025-10-19 18:37:42,321 - data_ingestion - DEBUG - Removed the original zip file data/raw\auto_mpg.zip

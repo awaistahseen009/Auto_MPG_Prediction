@@ -48,7 +48,10 @@ def download_file(pathname=None) -> None:
 def extract_file(filepath: str, extracted_path = None) -> None:
     try:
         logger.debug("Starting extraction from %s", filepath)
-        EXTRACT_DIR = extracted_path 
+        if extracted_path is not None:
+            EXTRACT_DIR = extracted_path 
+        else:
+            EXTRACT_DIR = os.path.join(RAW_DATA_DIR, "extracted")
         os.makedirs(EXTRACT_DIR, exist_ok=True)
         with zipfile.ZipFile(filepath, "r") as zip_file:
             zip_file.extractall(path=EXTRACT_DIR)
