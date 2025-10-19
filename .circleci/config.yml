@@ -27,8 +27,7 @@ jobs:
             python3 -m venv venv
             . venv/bin/activate
             pip install --upgrade pip
-            pip install -r requirements.txt
-            pip install dvc[s3] pytest pytest-order joblib scikit-learn pandas
+            pip install -r requirements.txt -c constraints.txt
       - run:
           name: Configure AWS CLI
           command: |

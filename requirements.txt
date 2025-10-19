@@ -5,9 +5,10 @@ seaborn
 scikit-learn
 awscli
 pingouin
-mlflow<3
 dagshub
+mlflow<3
 dvc[s3]
-dvc
 joblib
 pytest
+boto3==1.26.2
+pytest-order
