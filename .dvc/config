@@ -1,0 +1,8 @@
+[core]
+    remote = myremote
+['remote "myremote"']
+    url = s3://auto-mpg
+    access_key_id = DO00DDELHD3RL374U8AL
+    secret_access_key = EGmY1UY20Ur585VAGhLjqXkUqDiZJzWqlrnYlQap6GY
+    endpointurl = https://sfo3.digitaloceanspaces.com
+    region = sfo3

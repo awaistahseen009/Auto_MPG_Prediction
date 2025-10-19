@@ -7,3 +7,4 @@ models/
 .dvc/cache/
 archives/*
 archives
+.dvc/config
