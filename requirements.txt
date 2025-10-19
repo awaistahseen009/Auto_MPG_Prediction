@@ -3,7 +3,6 @@ pandas
 matplotlib
 seaborn
 scikit-learn
-awscli
 pingouin
 dagshub
 mlflow<3
@@ -11,4 +10,5 @@ dvc[s3]
 joblib
 pytest
 boto3==1.26.2
+awscli==1.27.62
 pytest-order
