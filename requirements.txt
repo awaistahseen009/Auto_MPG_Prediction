@@ -4,8 +4,8 @@ matplotlib
 seaborn
 pathspec==0.9.0
 scikit-learn
-pingouin
 dagshub
+pingouin
 mlflow<3
 dvc[s3]
 joblib
