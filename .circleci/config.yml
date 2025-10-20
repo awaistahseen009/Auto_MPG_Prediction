@@ -3,7 +3,7 @@ version: 2.1
 executors:
   docker-executor:
     docker:
-      - image: amazon/aws-cli:2.14.6
+      - image: python:3.12-slim
     working_directory: ~/repo
     environment:
       DVC_REMOTE: $DO_BUCKET_NAME
@@ -16,53 +16,48 @@ jobs:
     executor: docker-executor
     steps:
       - checkout
+
       - run:
-          name: "Installing Python Dependencies"
+          name: Install Dependencies
           command: |
-            yum update -y
-            yum install -y python3 python3-venv python3-pip unzip zip git
-      - run:
-          name: Setup Python venv
-          command: |
-            python3 -m venv venv
-            . venv/bin/activate
+            apt-get update -y
+            apt-get install -y git curl unzip zip
             pip install --upgrade pip
+            pip install awscli
+            pip install "dvc[s3]==3.50.0"
             pip install -r requirements.txt
+
       - run:
-          name: Configure AWS CLI
+          name: Configure AWS CLI (DigitalOcean Spaces)
           command: |
             aws configure set aws_access_key_id $DO_ACCESS_KEY_ID
             aws configure set aws_secret_access_key $DO_SECRET_ACCESS_KEY
             aws configure set default.region $DO_REGION
+
       - run:
-          name: Configure DO Bucket
+          name: Configure DVC Remote for DO Spaces
           command: |
-            . venv/bin/activate
             dvc remote add -d -f myremote $DO_BUCKET_NAME
             dvc remote modify myremote access_key_id $DO_ACCESS_KEY_ID
             dvc remote modify myremote secret_access_key $DO_SECRET_ACCESS_KEY
             dvc remote modify myremote endpointurl $DO_ENDPOINT
             dvc remote modify myremote region $DO_REGION
+
       - run:
-          name: Pull DVC data
-          command: |
-            . venv/bin/activate
-            dvc pull
+          name: Pull DVC Data
+          command: dvc pull
+
       - run:
-          name: Dataset tests
-          command: |
-            . venv/bin/activate
-            pytest tests/test_dataset.py -v
+          name: Dataset Tests
+          command: pytest tests/test_dataset.py -v
+
       - run:
-          name: Run DVC pipeline
-          command: |
-            . venv/bin/activate
-            dvc repro
+          name: Run DVC Pipeline
+          command: dvc repro
+
       - run:
-          name: Model tests
-          command: |
-            . venv/bin/activate
-            pytest tests/test_model.py -v
+          name: Model Tests
+          command: pytest tests/test_model.py -v
 
 workflows:
   version: 2
