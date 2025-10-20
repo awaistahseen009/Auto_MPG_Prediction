@@ -57,7 +57,7 @@ jobs:
 
       - run:
           name: Model Tests
-          command: pytest tests/test_model.py -v
+          command: pytest tests/test_model_performance.py -v
 
 workflows:
   version: 2
